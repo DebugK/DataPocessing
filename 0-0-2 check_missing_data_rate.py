@@ -6,6 +6,7 @@ import time
 from glob import glob
 import numpy as np
 import math
+
 # 모든 컬럼명 출력 옵션(최대 10개)
 pd.set_option('display.max_columns', 10)
 
