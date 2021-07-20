@@ -111,8 +111,7 @@ def make_full_timestamp(df):
 
     # print(pd_ts)
     customer_timestamp_df = pd.DataFrame(columns=['customer'])
-    # for i in range(0,len(customer_df)):
-    for i in range(0, 1000):
+    for i in range(0,len(customer_df)):
         plus_customer_df = pd_ts.assign(customer=customer_df['customer'].iloc[i])
 
         customer_timestamp_df = pd.concat([plus_customer_df, customer_timestamp_df])
